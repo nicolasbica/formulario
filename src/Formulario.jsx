@@ -52,13 +52,13 @@ function Formulario() {
     }
 
     return <form> 
-        <input onChange={onChangeUm} type="text" name="nome" id="1" />
-            <input onChange={onChangeDois} type="number" name="idade" id="2" />
-                <input onChange={onChangeTres} type="number" name="telefone" id="3" />
-                    <input onChange={onChangeQuatro} type="text" name="cidade" id="4" />
-                        <input onChange={onChangeCinco} type="email" name="email" id="5" />
+        <input onChange={onChangeUm} type="text" placeholder='digite seu nome' name="nome" id="1" />
+            <input onChange={onChangeDois} type="number" placeholder='digite sua idade' name="idade" id="2" />
+                <input onChange={onChangeTres} type="tel" placeholder='digite seu telefone' name="telefone" id="3" />
+                    <input onChange={onChangeQuatro} type="text" placeholder='digite o nome de sua cidade' name="cidade" id="4" />
+                        <input onChange={onChangeCinco} type="email" placeholder='digite seu email' name="email" id="5" />
                             <input onChange={onChangeSeis} type="checkbox" name="emprego" id="6" />
-                                <input onChange={onChangeSete} type="text" name="dataNascimento" id="7" />
+                                <input onChange={onChangeSete} type="text" placeholder='digite sua data de nascimento' name="dataNascimento" id="7" />
 
 
         <p>Nome {pessoa.nome}</p>
