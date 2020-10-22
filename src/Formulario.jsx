@@ -24,49 +24,54 @@ function Formulario() {
         })
     }
 
-    function onChangeQuatro(event){
+    function onChangeQuatro(event) {
         alteraPessoa({
-       ...pessoa,
+            ...pessoa,
             cidade: event.target.value
         })
     }
 
-    function onChangeCinco(event){
+    function onChangeCinco(event) {
         alteraPessoa({
             ...pessoa,
             email: event.target.value
         })
     }
 
-    function onChangeSeis(event){
+    function onChangeSeis(event) {
         alteraPessoa({
+            ...pessoa,
             emprego: event.target.checked,
         })
+              
     }
 
-    function onChangeSete(event){
+    function onChangeSete(event) {
         alteraPessoa({
             ...pessoa,
             dataNascimento: event.target.value
         })
     }
 
-    return <form> 
-        <input onChange={onChangeUm} type="text" placeholder='digite seu nome' name="nome" id="1" />
-                <input onChange={onChangeTres} type="tel" placeholder='digite seu telefone' name="telefone" id="3" />
-                    <input onChange={onChangeQuatro} type="text" placeholder='digite o nome de sua cidade' name="cidade" id="4" />
-                        <input onChange={onChangeCinco} type="email" placeholder='digite seu email' name="email" id="5" />
-                            <input onChange={onChangeSeis} type="checkbox" name="emprego" id="6" />
-                                <input onChange={onChangeSete} type="text" placeholder='digite sua data de nascimento' name="dataNascimento" id="7" />
+    return <form>
+        <input onChange={onChangeUm} type="text" placeholder='digite seu nome' name="nome" id="a1" />
+        <input onChange={onChangeDois} type="number" placeholder='digite sua idade' name="idade" id="a2" />
+        <input onChange={onChangeTres} type="tel" placeholder='digite seu telefone' name="telefone" id="a3" />
+        <input onChange={onChangeQuatro} type="text" placeholder='digite o nome de sua cidade' name="cidade" id="a4" />
+        <input onChange={onChangeCinco} type="email" placeholder='digite seu email' name="email" id="a5" />
+        <input onChange={onChangeSeis} type="checkbox" name="emprego" id="a6" />
+        <input onChange={onChangeSete} type="date" placeholder='digite sua data de nascimento' name="dataNascimento" id="a7" />
 
 
         <p>Nome {pessoa.nome}</p>
-            <p>Idade {pessoa.idade}</p>
-                <p>Telefone {pessoa.telefone}</p>
-                    <p>Cidade {pessoa.cidade}</p>
-                        <p>Email {pessoa.email}</p>
-                            <p>Nasci {pessoa.dataNascimento}</p>
-
+        <p>Idade {pessoa.idade}</p>
+        <p>Telefone {pessoa.telefone}</p>
+        <p>Cidade {pessoa.cidade}</p>
+        <p>Email {pessoa.email}</p>
+        <p>Nasci {pessoa.dataNascimento}</p>
+        <div>
+            <p>{pessoa.nome} esta atualmente {pessoa.emprego ? 'trabalhando' : 'procurando trabalho'}</p>
+        </div>
     </form>
 }
 
