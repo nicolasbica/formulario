@@ -24,12 +24,6 @@ function Formulario() {
         alteraPessoa(copia)
     }
 
-
-
-
-
-
-
     function salvaPessoa() {
         ColocaNoLocalStorage('usuario', pessoa)
     }
