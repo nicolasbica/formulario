@@ -28,8 +28,6 @@ function Formulario() {
         ColocaNoLocalStorage('usuario', pessoa)
     }
 
-
-
     return <form>
         <input onChange={onChangeSupremo} type="text" placeholder='digite seu nome' name="nome" id="a1" />
         <input onChange={onChangeSupremo} type="number" placeholder='digite sua idade' name="idade" id="a2" />
