@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Formulario from './main/Formulario'
+import Formulario from './Formulario'
 import Curriculo from './Curriculo'
 import Projetos from './Projetos'
 

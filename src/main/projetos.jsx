@@ -13,7 +13,7 @@ function Projetos() {
 
         <hr></hr>
 
-        <h3>Dead by ht</h3>
+        <h3>Dead by DayLight</h3>
         <span>Tecnologia: Unity e Game Maker</span>
         <p>Jogo de perseguição, com um assassino te perseguindo.</p>
 
@@ -50,4 +50,4 @@ function Projetos() {
 
     </div>
 }
-export default projetos
+export default Projetos

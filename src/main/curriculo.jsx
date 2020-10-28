@@ -1,31 +1,10 @@
 import React, { useState } from 'react'
 
-function PegaDoLocalStorage(chave) {
-  const valorDoLocalStorage = localStorage.getItem(chave)
-  return JSON.parse(valorDoLocalStorage) || {}
-}
 
-function ColocaNoLocalStorage(chave, valor) {
-  const valorComoString = JSON.stringify(valor)
-  localStorage.setItem(chave, valorComoString)
-}
-
-function salvaPessoa() {
-  ColocaNoLocalStorage('usuario', pessoa)
-}
-
-function pessoa() {
-    
-  alteraPessoa(novoEstado)
-
-}
-
-function  Curriculo () {
-
-  const usuario = PegaDoLocalStorage('usuario')
-  const [usuario, alteraPessoa] = useState(usuario || {})
-  
+function curriculo () {
   return <div>
+
+    <h1>Meu curriculo:</h1>
 
   <ul> 
     
@@ -48,8 +27,6 @@ function  Curriculo () {
     </li>
     
   </ul> 
-
-      <button type="button" onClick={salvaPessoa} >Salvar</button>
       
   </div>
 }
